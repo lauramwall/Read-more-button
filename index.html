@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <title>Read more button</title>
+     <link rel="stylesheet" href="style.css" type="text/css">
+     
+     <!-- Bootstrap 4 -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ </head>
+
+ <body>
+
+     <!-- Blog div -->
+
+     <main role="main" class="container m-5 mx-auto">
+         <div class="row">
+             <div class="col-md-10 blog-main">
+
+                 <div class="blog-post">
+                     <h2 class="blog-post-title">Blog Title</h2>
+                     <p class="blog-post-meta font-italic">Cras pulvinar orci at rutrum egestas.</p>
+
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi massa eros, rhoncus id neque laoreet, porta convallis orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque dolor augue, dapibus quis sapien id, iaculis ornare quam. Nulla ornare enim in tellus fringilla, quis gravida eros accumsan. Maecenas ut blandit eros. Pellentesque porttitor augue ut nunc pretium, et malesuada felis consequat. In blandit nisl viverra velit ultricies, et aliquet magna tempor<span id="dots1">..</span>.</p>
+
+                     <span id="more1">
+
+                         <p>Ut sed maximus lectus. In luctus, ex ac placerat lacinia, lectus quam ornare dolor, nec ornare eros purus facilisis velit. Praesent justo libero, euismod bibendum tincidunt sit amet, semper in nulla. Cras sollicitudin dui auctor leo lacinia, non pretium orci euismod. Curabitur sollicitudin lobortis tortor, a auctor massa commodo eget. Phasellus consectetur leo ut efficitur bibendum. Mauris feugiat, nibh at pellentesque pharetra, est ipsum dignissim quam, ut condimentum metus nibh sed metus. Mauris feugiat nulla vitae lectus iaculis suscipit. Duis nec enim interdum, tincidunt massa sit amet, congue nunc. Mauris facilisis tincidunt euismod.</p>
+
+                         <p>Curabitur eget odio lacus. Nunc a est a quam gravida molestie. Nulla elementum, enim sed elementum posuere, libero lacus mollis quam, et posuere arcu leo a ipsum. Quisque mauris augue, aliquam et mollis non, tempor sodales neque. Nulla tristique sagittis fringilla. Integer gravida lacinia leo, eget vestibulum velit vulputate at. Vivamus ante neque, sollicitudin congue mollis sit amet, finibus at est. Sed sollicitudin sem a augue laoreet accumsan et sed velit. Aliquam eget cursus magna. Donec eget dapibus ipsum. In efficitur facilisis justo, a auctor nisl viverra vel. Morbi a justo dignissim, pulvinar leo ut, consequat nibh.</p>
+
+                         <p>Etiam pharetra magna id lacinia sodales. Etiam rutrum blandit nisl quis facilisis. Nunc semper blandit turpis, sed consequat enim lobortis eu. Duis vitae tellus nulla. Donec libero nibh, consectetur at mi id, bibendum ultricies arcu. Duis a congue justo, eget sollicitudin orci. Mauris tincidunt nibh tellus, non blandit massa fringilla quis. Cras pulvinar orci at rutrum egestas. Nunc id sagittis quam. Phasellus efficitur scelerisque eros, id dignissim sem maximus vel. Suspendisse auctor pretium aliquet. </p>
+
+                     </span>
+
+                     <button onclick="read1Function()" class="read-link mb-3 pl-0" id="readBtn1">Read more&nbsp;&#x279C;</button>
+                 </div><!-- /.blog-post -->
+
+             </div><!-- /.blog-main -->
+
+         </div><!-- /.row -->
+
+     </main>
+
+     <!-- Scripts -->
+
+     <script>
+
+         // Read more button functionality
+         function read1Function() {
+             var dots = document.getElementById("dots1");
+             var moreText = document.getElementById("more1");
+             var btnText = document.getElementById("readBtn1");
+
+             if (dots.style.display === "none") {
+                 dots.style.display = "inline";
+                 btnText.innerHTML = "Read more&nbsp;&#x279C;";
+                 moreText.style.display = "none";
+             } else {
+                 dots.style.display = "none";
+                 btnText.innerHTML = "Read less&nbsp;&#x279C;";
+                 moreText.style.display = "inline";
+             }
+         }
+
+     </script>
+ </body>
+
+ </html>

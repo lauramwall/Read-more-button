@@ -1,0 +1,25 @@
+/* Read More button styling */
+
+.read-link {
+    border: none;
+    text-decoration: underline;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#more1 {
+  display: none;
+}
+
+#more2 {
+  display: none;
+}
+
+#more3 {
+  display: none;
+}
+
+#more4 {
+  display: none;
+}
